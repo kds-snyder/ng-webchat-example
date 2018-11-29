@@ -1,0 +1,23 @@
+:host,
+.flex,
+.main-container,
+.webchat-container {
+    height: 100%;
+    overflow: hidden;
+}
+
+.flex {
+    display: flex;
+    height: 100%;
+}
+
+.main-container {
+    flex: 3;
+    background-color: #f2f2f2;
+    padding: 1rem;
+}
+
+.webchat-container {
+    position: relative;
+    flex: 1;
+}
