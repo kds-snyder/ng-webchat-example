@@ -15,20 +15,17 @@ export class AppComponent implements OnInit {
     @ViewChild('botWindow') botWindowElement: ElementRef;
 
     public ngOnInit(): void {
-        const botConnection = new BotChat.DirectLine({
-            secret: 'YOUR_SECRET_HERE',
+        const directLine = BotChat.createDirectLine({
+            secret: '80cTqez07cM.cwA.dwc.ZJ4loNdOhdA7h-HHWt2iI6kXOvQV-Dd5IO1UoCi6zpk',
             webSocket: false
         });
 
-        BotChat.App({
-            botConnection: botConnection,
-            bot: { id: 'ENTER_ID_HERE' },
-            adaptiveCardsHostConfig: {},
-            user: { id: 'USER_ID', name: 'USER_NAME' },
-            resize: 'detect'
+        BotChat.renderWebChat({
+            directLine: directLine,
+            userID: 'USER_ID'
         }, this.botWindowElement.nativeElement);
 
-        botConnection.postActivity({
+        directLine.postActivity({
             from: { id: 'USER_ID', name: 'USER_NAME' },
             name: 'requestWelcomeDialog',
             type: 'event',

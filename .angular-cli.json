@@ -17,8 +17,7 @@
             "tsconfig": "tsconfig.app.json",
             "prefix": "app",
             "styles": [
-                "main.scss",
-                "../node_modules/botframework-webchat/botchat.css"
+                "main.scss"
             ],
             "scripts": [],
             "environmentSource": "environments/environment.ts",

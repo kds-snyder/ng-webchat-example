@@ -1,6 +1,6 @@
 {
     "name": "ng-webchat",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "private": true,
     "dependencies": {
         "@angular/common": "^5.2.5",
@@ -10,10 +10,12 @@
         "@angular/platform-browser": "^5.2.5",
         "@angular/platform-browser-dynamic": "^5.2.5",
         "@angular/router": "^5.2.5",
-        "botframework-webchat": "^0.14.0",
+        "botframework-webchat": "4.2.0",
         "core-js": "^2.5.2",
+        "json-loader": "^0.5.7",
         "lodash": "^4.17.4",
         "rxjs": "^5.5.5",
+        "the": "^1.0.2",
         "zone.js": "^0.8.18"
     },
     "devDependencies": {
